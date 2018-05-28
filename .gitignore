@@ -1,0 +1,11 @@
+# Bazel
+bazel-libspiro-wrapper
+bazel-bin
+bazel-genfiles
+bazel-out
+bazel-testlogs
+/Debug/
+*genrule.log
+# temporary files
+*.swp
+*.swo
