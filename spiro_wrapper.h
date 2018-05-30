@@ -65,10 +65,10 @@ struct KnotResult {
     const double co1 = (1 - t) * (1 - t) * t * 3;
     const double co2 = (1 - t) * t * t * 3;
     const double co3 = t * t * t;
-    *x = points[0].first * co0 + points[1].first * co1 + points[2].first * co2 +
-         points[3].first * co3;
-    *y = points[0].second * co0 + points[1].second * co1 +
-         points[2].second * co2 + points[3].second * co3;
+    *x = fromX.first * co0 + points[0].first * co1 + points[1].first * co2 +
+         points[2].first * co3;
+    *y = fromY.second * co0 + points[0].second * co1 +
+         points[1].second * co2 + points[2].second * co3;
     return true;
   }
 };
